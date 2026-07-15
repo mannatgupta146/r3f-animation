@@ -1,8 +1,16 @@
+import { Canvas } from '@react-three/fiber'
 import React from 'react'
+import Experience from './components/Experience'
+import { OrbitControls } from '@react-three/drei'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="parent h-screen w-full">
+      <Canvas>
+        <Experience />
+        <OrbitControls />
+      </Canvas>
+    </div>
   )
 }
 
